@@ -1,8 +1,7 @@
 let year = (prompt("Який твій рік народження?",""));
 let age;
-
 switch (true) {
-    case (year <= 2023): age = 2023 - year; alert('вік = ' + age); break;
+    case (year <= 2023) && (year >= 1923): age = 2023 - year; alert('вік = ' + age); break;
     case (year == null): alert('Шкода, що Ви не захотіли ввести свій рік народження');
 }
 
